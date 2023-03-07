@@ -7,7 +7,7 @@ export class Snack {
 
   get listTemplate() {
     return `
-    <div class="col-3 card m-2">
+    <div class="col-3 card m-2" onclick="app.moneyController.purchase('${this.name}')">
     <img class="p-3"
       src=${this.imgUrl}
       alt="${this.name}">

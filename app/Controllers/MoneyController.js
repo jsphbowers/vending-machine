@@ -17,9 +17,18 @@ export class MoneyController {
     // console.log("hello from moneycontroller")
     appState.on('money', _drawMoney)
   }
-  addMoney() {
-    console.log("adding Money")
-    moneyService.addMoney()
+  addQuarter() {
+    console.log("adding Quarter")
+    moneyService.addQuarter()
   }
 
+  addDollar() {
+    console.log("adding Dollar")
+    moneyService.addDollar()
+  }
+
+  purchase(snackName) {
+    console.log("money Please!")
+    moneyService.purchase(snackName)
+  }
 }
